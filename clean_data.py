@@ -2,6 +2,10 @@ import copy
 
 
 def clean_data(players_list):
+    """
+    param players_list: contants.PLAYERS
+    return: list of dictionaries with cleaned data for name, guardians, experience, and height keys
+    """
     players = copy.deepcopy(players_list)
     cleaned_players = []
     for player in players:

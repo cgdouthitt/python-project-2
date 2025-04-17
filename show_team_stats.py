@@ -10,6 +10,10 @@ team_list = list(balanced_teams.keys())
 
 
 def show_team_stats(team_name):
+    """
+    param players: selected team from app.py
+    return: prints of selected team stats
+    """
     players = balanced_teams[team_name]
     total_players = len(players)
     experienced = sum(1 for p in players if p['experience'])

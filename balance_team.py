@@ -2,6 +2,11 @@ import random
 
 
 def balance_teams(players, team_names):
+    """
+    param players: clean_data.cleaned_data
+    param team_names: constants.TEAMS
+    return: dictionary of teams
+    """
     num_teams = len(team_names)
 
     experienced = [p for p in players if p['experience']]
